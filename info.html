@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Info</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="layar-penuh">
+        <section class="arif_form-section">
+            <div class="arif_layar-dalam">
+                <h2>Booking Information</h2>
+                <form action="submit.html" method="POST">
+                    <!-- Nama -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+                    <!-- Tujuan Destinasi -->
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select your destination</option>
+                        <option value="bali">Bali</option>
+                        <option value="lombok">Lombok</option>
+                        <option value="raja-empat">Raja Ampat</option>
+                        <option value="bromo">Bromo</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="Bandung">Bandung</option>
+                    </select>
+
+                    <!-- Berapa Hari -->
+                    <label for="days">Number of Days:</label>
+                    <input type="number" id="days" name="days" min="1" placeholder="Enter number of days" required />
+                    <p>harga tourgate Rp;500.000/Hari</p>
+
+                    <!-- Tombol Submit -->
+                    <button type="submit" class="tombol">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
